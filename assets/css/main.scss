@@ -147,7 +147,10 @@ a {
 
 // Social link pills — replace naked icon-links with rounded pill buttons
 .author__urls {
-  li { margin-bottom: 0.35em; }
+  li {
+    margin-bottom: 0.35em;
+    white-space: normal; // theme sets nowrap globally; allow wrapping for location etc.
+  }
 
   a {
     display: inline-flex;
